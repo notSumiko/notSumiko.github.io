@@ -1,34 +1,68 @@
 /* ═══════════════════════════════════════
                   FONTS
    ═══════════════════════════════════════ */
-
-@import url("https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap"
+);
 
 /* ═══════════════════════════════════════
               FONT VARIABLES
    ═══════════════════════════════════════ */
-
 :root {
-    --font-body: Verdana, Arial, sans-serif;
-    --font-ui: Tahoma, Arial, sans-serif;
-    --font-cute: "Trebuchet MS", Arial, sans-serif;
-    --font-serif: Georgia, "Book Antiqua", serif;
-    --font-mono: "Courier New", "Lucida Console", monospace;
-    --font-impact: Impact, "Arial Black", sans-serif;
-    --font-gothic: "UnifrakturMaguntia", serif;
-    --font-oldweb: "Comic Sans MS", "Trebuchet MS", cursive;
-    --font-fashion: "Century Gothic", Arial, sans-serif;
+
+    --font-body:
+        Verdana,
+        Arial,
+        sans-serif;
+
+    --font-ui:
+        Tahoma,
+        Arial,
+        sans-serif;
+
+    --font-cute:
+        "Trebuchet MS",
+        Arial,
+        sans-serif;
+
+    --font-serif:
+        Georgia,
+        "Book Antiqua",
+        serif;
+
+    --font-mono:
+        "Courier New",
+        "Lucida Console",
+        monospace;
+
+    --font-impact:
+        Impact,
+        "Arial Black",
+        sans-serif;
+
+    --font-gothic:
+        "UnifrakturMaguntia",
+        serif;
+
+    --font-oldweb:
+        "Comic Sans MS",
+        "Trebuchet MS",
+        cursive;
+
+    --font-fashion:
+        "Century Gothic",
+        Arial,
+        sans-serif;
+
 }
 
-
 /* ═══════════════════════════════════════
-              SANT JOAN
+                 SANT JOAN
    ═══════════════════════════════════════ */
-
 @font-face {
     font-family: "Sant Joan";
-    src: url("https://dl.dropbox.com/s/iwvkrg8ccgd1pf4/SantJoanDespi-Regular.otf");
+    src:
+        url("https://dl.dropbox.com/s/iwvkrg8ccgd1pf4/SantJoanDespi-Regular.otf"
+        );
     font-weight: normal;
     font-style: normal;
 }

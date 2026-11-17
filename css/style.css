@@ -33,7 +33,7 @@ html {
 body {
     margin: 0;
     min-height: 100vh;
-    font-family: Verdana, Arial, sans-serif;
+    font-family: 'Nunito', sans-serif;
     color: var(--text);
     background:
         url("https://i.pinimg.com/736x/31/d6/f3/31d6f3d6b8b61bede2d7f6c71e14137d.jpg") top left / cover no-repeat fixed;
@@ -124,7 +124,7 @@ header {
 .section-title {
     padding: 5px 3px 7px;
     color: #e6dce1;
-    font-family: var(--font-gothic);
+    font-family: 'Nunito', sans-serif;
     font-size: 18px;
     text-align: center;
     border-bottom:
@@ -189,7 +189,7 @@ header {
 .tiny-text {
     margin: 7px 2px;
     color: #ffffff;
-    font-family: var(--font-mono);
+    font-family: 'Nunito', sans-serif;
     font-size: 10px;
     line-height: 1.4;
 }
@@ -212,7 +212,7 @@ header {
     border:
         1px solid #ffffff;
     text-align: center;
-    font-family: var(--font-mono);
+    font-family: 'Nunito', sans-serif;
     font-size: 10px;
 }
 
@@ -277,7 +277,7 @@ main {
     padding:
         5px 7px;
     color: #ffffff;
-    font-family: var(--font-gothic);
+    font-family: 'Nunito', sans-serif;
     font-size: 20px;
     border-bottom:
         1px solid #3a383a;
@@ -317,7 +317,7 @@ main {
 }
 
 .cute-text {
-    font-family: var(--font-cute);
+    font-family: 'Nunito', sans-serif;
     color: #9a5272 !important;
 }
 
@@ -333,7 +333,7 @@ main {
     border:
         1px solid #ffffff;
     text-align: center;
-    font-family: var(--font-mono);
+    font-family: 'Nunito', sans-serif;
     font-size: 11px;
     box-shadow:
         2px 2px 0 #000000;
@@ -356,7 +356,7 @@ main {
 .two-column-content h3 {
     margin-top: 0;
     color: #3d3036;
-    font-family: var(--font-cute);
+    font-family: 'Nunito', sans-serif;
 
 }
 
@@ -404,7 +404,7 @@ main {
 .interest {
     padding: 7px 4px;
     color: #ffffff;
-    font-family: var(--font-mono);
+    font-family: 'Nunito', sans-serif;
     font-size: 9px;
     text-align: center;
     background:
@@ -433,7 +433,7 @@ main {
 
 .journal-date {
     color: #ffeef5;
-    font-family: var(--font-mono);
+    font-family: 'Nunito', sans-serif;
     font-size: 9px;
 }
 
@@ -477,7 +477,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 3px;
-    font-family: var(--font-mono);
+    font-family: 'Nunito', sans-serif;
     font-size: 10px;
 }
 
@@ -491,7 +491,7 @@ main {
 }
 
 .music-controls {
-    font-family: var(--font-mono);
+    font-family: 'Nunito', sans-serif;
     font-size: 9px;
 }
 
@@ -518,7 +518,7 @@ main {
 
 .guestbook-name {
     color: #8c5c70;
-    font-family: var(--font-mono);
+    font-family: 'Nunito', sans-serif;
     font-size: 10px;
     font-weight: bold;
 }
@@ -530,7 +530,7 @@ main {
 
 .guestbook-entry small {
     color: #777477;
-    font-family: var(--font-mono);
+    font-family: 'Nunito', sans-serif;
     font-size: 8px;
 }
 
@@ -541,7 +541,7 @@ main {
     border:
         1px dashed #999699;
     text-align: center;
-    font-family: var(--font-mono);
+    font-family: 'Nunito', sans-serif;
     font-size: 9px;
 }
 
@@ -578,7 +578,7 @@ main {
     padding:
         5px 3px 8px;
     color: #ffffff;
-    font-family: var(--font-gothic);
+    font-family: 'Nunito', sans-serif;
     font-size: 19px;
     text-align: center;
     border-bottom:
@@ -597,7 +597,7 @@ main {
     display: block;
     padding: 6px 4px;
     color: #ffffff;
-    font-family: Tahoma, Arial, sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 11px;
     text-align: center;
     text-decoration: none;
@@ -641,7 +641,7 @@ main {
     padding-bottom: 6px;
     margin-bottom: 7px;
     color: #ffffff;
-    font-family: var(--font-gothic);
+    font-family: 'Nunito', sans-serif;
     font-size: 17px;
     text-align: center;
     border-bottom:
@@ -661,7 +661,7 @@ main {
     padding-bottom: 6px;
     border-bottom:
         1px dotted #ffffff;
-    font-family: var(--font-mono);
+    font-family: 'Nunito', sans-serif;
     font-size: 9px;
     line-height: 1.5;
 }
@@ -708,13 +708,13 @@ main {
 .mood-face {
     padding: 5px;
     color: #eab7cc;
-    font-family: var(--font-cute);
+    font-family: 'Nunito', sans-serif;
     font-size: 28px;
 }
 
 .mood-text {
     color: #555555;
-    font-family: var(--font-mono);
+    font-family: 'Nunito', sans-serif;
     font-size: 9px;
 }
 
@@ -734,7 +734,7 @@ main {
     margin:
         5px 0 0;
     color: #f3dbe7;
-    font-family: var(--font-cute);
+    font-family: 'Nunito', sans-serif;
     font-size: 11px;
 }
 
@@ -750,7 +750,7 @@ main {
 .mini-links a {
 
     color: #f5cbe0;
-    font-family: var(--font-mono);
+    font-family: 'Nunito', sans-serif;
     font-size: 14px;
 }
 
@@ -782,47 +782,9 @@ p {
 }
 
 .content-box p {
-    font-family:
-        Verdana,
-        Arial,
-        sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 11px;
     line-height: 1.6;
-}
-
-.monospace {
-    font-family:
-        "Courier New",
-        "Lucida Console",
-        monospace;
-}
-
-.old-web {
-    font-family:
-        "Comic Sans MS",
-        "Trebuchet MS",
-        cursive;
-}
-
-.banner-text {
-    font-family:
-        Impact,
-        "Arial Black",
-        sans-serif;
-}
-
-.fancy-text {
-    font-family:
-        Georgia,
-        "Book Antiqua",
-        serif;
-}
-
-.y2k-text {
-    font-family:
-        "Century Gothic",
-        Arial,
-        sans-serif;
 }
 
 a {
@@ -840,9 +802,7 @@ footer {
     margin-top: 10px;
     padding: 10px;
     color: var(--text);
-    font-family:
-        "Courier New",
-        monospace;
+    font-family: 'Nunito', sans-serif;
     font-size: 12px;
     text-align: center;
     text-shadow:
@@ -1068,7 +1028,7 @@ html.grain-off::before {
     border: 1px solid #ffffff;
     box-shadow: 2px 2px 0 #000000;
 
-    font-family: "Courier New", monospace;
+    font-family: 'Nunito', sans-serif;
     font-size: 10px;
 
     cursor: pointer;

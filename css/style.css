@@ -1,17 +1,47 @@
-/* variables */
+/* :3 */
 :root {
-    --text: #ffe7ee;
-    --white: #ffffff;
+
+    /* images */
+    --body-bg: url("https://i.pinimg.com/736x/31/d6/f3/31d6f3d6b8b61bede2d7f6c71e14137d.jpg");
+    --main-bg: url("https://i.pinimg.com/736x/4f/2a/4c/4f2a4c17f863ccc2f87775face203897.jpg");
+    --header-bg: url("../assets/images/SumikoWeb.png");
+
+    /* colors */
+    --white: #fff;
+    --lightpink: #ffd5e9;
     --pink: #f3a3c4;
-    --black: #000000;
+    --pink-border: #ad8b9b;
+    --dark: #212121;
+    --black: #000;
     --border: #777477;
 
-    /* font sizes */
+    /* backgrounds */
+    --nav-bg: repeating-conic-gradient(#1c1a1a 0% 25%, #2a2929 0% 50%) 0 0 / 24px 24px;
+    --nav-link-bg: linear-gradient(#928f8f, #212121);
+    --nav-link-pink-bg: linear-gradient(var(--lightpink), #3a2830);
+
+    /* shadows */
+    --shadow-black: rgba(0, 0, 0, 0.7);
+    --shadow-dark: rgba(0, 0, 0, 0.5);
+    --shadow-soft: rgba(0, 0, 0, 0.18);
+    --frame-shadow: inset 0 0 0 1px var(--white), 3px 3px 0 var(--shadow-black);
+    --box-shadow: inset 0 0 0 1px #171616, inset 0 0 8px var(--shadow-soft), 2px 2px 0 var(--shadow-dark);
+    --link-shadow: inset 1px 1px #0e0e0e, inset -1px -1px #313030;
+
+    /* typography */
     --text-size: 16px;
     --h1-size: 25px;
+
+    /* spacing */
+    --spacing: 10px;
+    --spacing-small: 4px;
+
+    /* borders */
+    --frame-border: 2px solid #666;
+    --box-border: 2px solid var(--border);
+    --link-border: 1px solid var(--border);
 }
 
-/* base */
 * {
     box-sizing: border-box;
 }
@@ -24,89 +54,107 @@ body {
     margin: 0;
     min-height: 100vh;
     font-family: Arial, sans-serif;
-    color: var(--text);
-    background: var(--black) url("https://i.pinimg.com/736x/31/d6/f3/31d6f3d6b8b61bede2d7f6c71e14137d.jpg") top left / cover no-repeat fixed;
+    font-size: var(--text-size);
+    color: var(--white);
+    background: var(--black) var(--body-bg) top left / cover no-repeat fixed;
 }
 
-/* main wrapper */
+
+/* LAYOUT */
 #wrapper {
     width: min(1080px, 95%);
     margin: 18px auto 30px;
 }
 
-/* header */
-header {
-    margin-bottom: 10px;
-}
-
-.header {
-    min-height: 155px;
-    background: url("../assets/images/SumikoWeb.png") center / cover;
-    border: 2px solid #666;
-    border-radius: 10px;
-    box-shadow: inset 0 0 0 1px var(--white), 3px 3px 0 rgba(0, 0, 0, 0.7);
-}
-
-/* three column layout */
 #layout {
     display: grid;
     grid-template-columns: 180px minmax(0, 1fr) 180px;
-    gap: 10px;
+    gap: var(--spacing);
     align-items: start;
 }
 
-/* sidebars */
 .sidebar-left,
 .sidebar-right {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: var(--spacing);
 }
 
-.nav {
-    background: linear-gradient(135deg, #4d4d4d 2%, #333333 20%, #1a1a1a 50%, #000000 100%);
-    border: 2px solid var(--border);
-    border-radius: 8px;
-    box-shadow: inset 0 0 0 1px var(--white), inset 0 0 8px rgba(0, 0, 0, 0.2), 3px 3px 0 rgba(0, 0, 0, 0.55);
+
+/* HEADER */
+header {
+    margin-bottom: var(--spacing);
 }
 
-/* main content */
+.header {
+    min-height: 155px;
+    background: var(--header-bg) center / cover;
+}
+
+
+/* MAIN CONTENT */
 main {
     min-width: 0;
     padding: 8px;
+    background: var(--main-bg) center / auto;
     border-radius: 8px;
-    background: url("https://i.pinimg.com/736x/4f/2a/4c/4f2a4c17f863ccc2f87775face203897.jpg") center / auto;
-    border: 2px solid #666;
-    box-shadow: inset 0 0 0 1px var(--white), 3px 3px 0 rgba(0, 0, 0, 0.7);
 }
 
 .content-box {
-    margin-bottom: 10px;
+    margin-bottom: var(--spacing);
+    padding: var(--spacing);
+    background: rgba(33, 33, 33, 0.85);
+    border: var(--box-border);
     border-radius: 8px;
-    padding: 10px;
-    color: var(--white);
-    background: #212121;
-    border: 2px solid var(--border);
-    box-shadow: inset 0 0 0 1px #171616, inset 0 0 8px rgba(0, 0, 0, 0.18), 2px 2px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: var(--box-shadow);
 }
 
-/* navigation */
+.welcome-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.welcome-box p {
+    flex: 1;
+    margin: 0;
+}
+
+.welcome-box img {
+    height: auto;
+    flex-shrink: 0;
+}
+
+.welcome-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.welcome-text p {
+    margin: 0;
+}
+
+/* NAV */
 .nav {
     padding: 7px;
+    background: var(--nav-bg);
+    border-radius: 18px;
 }
 
 .nav-title {
     padding: 5px 3px 8px;
-    color: var(--white);
     font-size: var(--h1-size);
     text-align: center;
-    border-bottom: 1px solid var(--border);
+    border-bottom: var(--link-border);
+    -webkit-text-stroke: 1.5px var(--pink-border);
 }
 
 .nav-links {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: var(--spacing-small);
     padding-top: 7px;
 }
 
@@ -114,68 +162,54 @@ main {
     display: block;
     padding: 6px 4px;
     color: var(--white);
-    font-size: var(--text-size);
     text-align: center;
-    text-decoration: none;
-    background: linear-gradient(#928f8f, #212121);
-    border: 1px solid var(--border);
-    box-shadow: inset 1px 1px #0e0e0e, inset -1px -1px #313030;
+    background: var(--nav-link-bg);
+    border: var(--link-border);
+    box-shadow: var(--link-shadow);
+    transition: 0.2s ease;
 }
 
-/* nav link when a link is hovered over */
-.nav-links a:hover {
+.nav-links a:nth-child(even) {
     color: var(--black);
-    background: linear-gradient(#e5bcd0, #4a3d43);
+    background: var(--nav-link-pink-bg);
 }
 
-/* typography */
-h1 {
-    font-size: var(--h1-size);
-    line-height: 1.4;
+.nav-links a:hover,
+.nav-links a:nth-child(even):hover {
+    color: var(--black);
+    background: var(--nav-link-pink-bg);
+}
+
+.nav-links a:nth-child(even):hover {
     color: var(--white);
+    background: var(--nav-link-bg);
 }
 
-p {
-    font-size: var(--text-size);
-    line-height: 1.5;
-    color: var(--white);
+
+/* SHARED FRAME */
+.header,
+main,
+.nav {
+    border: var(--frame-border);
+    box-shadow: var(--frame-shadow);
 }
 
-/* footer */
+
+/* FOOTER */
 footer {
-    margin-top: 10px;
-    padding: 10px;
-    font-size: var(--text-size);
+    margin-top: var(--spacing);
+    padding: var(--spacing);
     text-align: center;
-}
-
-footer p {
-    margin: 4px 0;
 }
 
 .footer-line {
-    overflow: hidden;
-    color: #ccc;
-    white-space: nowrap;
+    overflow-wrap: anywhere;
 }
 
-/* scrollbar */
-::-webkit-scrollbar {
-    width: 12px;
-    background: var(--white);
-}
 
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(var(--pink), #b96d91);
-    border: 1px solid var(--border);
-}
-
-::-webkit-scrollbar-track {
-    background: #ddd;
-}
-
-/* responsive layout */
+/* RESPONSIVE */
 @media (max-width: 850px) {
+
     #wrapper {
         width: 96%;
     }
@@ -183,9 +217,11 @@ footer p {
     #layout {
         grid-template-columns: 150px minmax(0, 1fr) 150px;
     }
+
 }
 
 @media (max-width: 680px) {
+
     #layout {
         grid-template-columns: 1fr;
     }
@@ -196,5 +232,63 @@ footer p {
 
     .header {
         min-height: 120px;
+    }
+
+}
+
+/* TEXT */
+
+p a,
+p a:visited {
+    color: var(--pink);
+}
+
+p a:hover {
+    color: var(--lightpink);
+}
+
+
+/* FALLING DECO */
+.decoration {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.falling-stars,
+.falling-crosses {
+    position: absolute;
+    inset: 0;
+}
+
+.falling-stars span,
+.falling-crosses span {
+    position: absolute;
+    top: -30px;
+    animation: falling linear infinite;
+}
+
+.falling-stars span {
+    width: 15px;
+    height: 15px;
+    background-image: url("http://dl2.glitter-graphics.net/pub/56/56322i8ciddu9ky.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.falling-crosses span {
+    color: #000;
+    font-size: 24px;
+}
+
+@keyframes falling {
+    from {
+        transform: translateY(-30px);
+    }
+
+    to {
+        transform: translateY(110vh);
     }
 }

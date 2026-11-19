@@ -14,6 +14,8 @@
     --dark: #212121;
     --black: #000;
     --border: #777477;
+    --dokiablue: #040011;
+    --dokiasteel: #323238;
 
     /* backgrounds */
     --nav-bg: repeating-conic-gradient(#1c1a1a 0% 25%, #2a2929 0% 50%) 0 0 / 24px 24px;
@@ -59,6 +61,25 @@ body {
     background: var(--black) var(--body-bg) top left / cover no-repeat fixed;
 }
 
+::selection {
+    background-color: var(--pink-border);
+    color: var(--black);
+}
+
+/* Ame-chan */
+.amechan {
+    position: fixed;
+    bottom: 0px;
+    right: 50px;
+    width: 410px;
+    z-index: 9999;
+}
+
+.amechan img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
 /* LAYOUT */
 #wrapper {
@@ -79,7 +100,6 @@ body {
     flex-direction: column;
     gap: var(--spacing);
 }
-
 
 /* HEADER */
 header {
@@ -109,18 +129,18 @@ main {
     box-shadow: var(--box-shadow);
 }
 
-.welcome-box {
+.double-box {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-.welcome-box p {
+.double-box p {
     flex: 1;
     margin: 0;
 }
 
-.welcome-box img {
+.double-box img {
     height: auto;
     flex-shrink: 0;
 }
@@ -247,6 +267,14 @@ p a:hover {
     color: var(--lightpink);
 }
 
+#title-notice {
+    font-weight: bold;
+    -webkit-text-stroke: 1px var(--pink-border);
+}
+
+#welcome-title {
+    -webkit-text-stroke: 1.5px var(--pink-border);
+}
 
 /* FALLING DECO */
 .decoration {
@@ -300,7 +328,7 @@ p a:hover {
     padding: 10px;
     border: var(--box-border);
     border-radius: 5px;
-    background: rgba(33, 33, 33, 0.9);
+    background: var(--nav-bg);
     color: var(--white);
     font-size: 13px;
     box-shadow: var(--box-shadow);
@@ -365,4 +393,27 @@ p a:hover {
 .calendar-dates span:not(:empty):hover {
     background: var(--lightpink);
     color: var(--dark);
+}
+
+/* MUSIC MARQUEE*/
+.music-marquee {
+    padding: 4px 8px;
+    overflow: hidden;
+    white-space: nowrap;
+    color: var(--lightpink);
+    font-size: 13px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.music-marquee marquee {
+    display: block;
+}
+
+.music-marquee img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    vertical-align: middle;
+    margin: 0 4px;
 }

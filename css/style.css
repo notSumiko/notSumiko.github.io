@@ -292,3 +292,77 @@ p a:hover {
         transform: translateY(110vh);
     }
 }
+
+
+/* CALENDAR */
+.calendar {
+    width: 100%;
+    padding: 10px;
+    border: var(--box-border);
+    border-radius: 5px;
+    background: rgba(33, 33, 33, 0.9);
+    color: var(--white);
+    font-size: 13px;
+    box-shadow: var(--box-shadow);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    color: var(--lightpink);
+    font-weight: bold;
+}
+
+.calendar-header button {
+    padding: 3px 7px;
+    background: transparent;
+    border: none;
+    color: var(--pink);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.calendar-header button:hover {
+    color: var(--white);
+}
+
+.calendar-days,
+.calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 4px;
+    text-align: center;
+}
+
+.calendar-days {
+    margin-bottom: 8px;
+    color: var(--pink);
+    font-weight: bold;
+}
+
+.calendar-days span {
+    color: var(--pink);
+}
+
+.calendar-dates span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+    aspect-ratio: 1;
+    color: var(--white);
+    border-radius: 4px;
+}
+
+.calendar-dates .today {
+    background: var(--pink);
+    color: var(--white);
+    font-weight: bold;
+}
+
+.calendar-dates span:not(:empty):hover {
+    background: var(--lightpink);
+    color: var(--dark);
+}

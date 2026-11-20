@@ -417,3 +417,40 @@ p a:hover {
     vertical-align: middle;
     margin: 0 4px;
 }
+
+
+/* VISITOR COUNTER */
+.visitor-counter {
+    text-align: center;
+    font-size: 12px;
+}
+
+.counter-title {
+    margin: 0 0 10px;
+    color: var(--pink);
+    font-weight: bold;
+}
+
+.counter-number {
+    padding: 8px;
+    margin-bottom: 8px;
+    background: #171616;
+    border: 1px solid var(--pink-border);
+}
+
+.counter-number img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.counter-online {
+    color: var(--lightpink);
+    font-size: 11px;
+}
+
+.counter-thanks {
+    margin: 10px 0 0;
+    color: var(--pink);
+    font-size: 11px;
+}

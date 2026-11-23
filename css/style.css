@@ -158,9 +158,22 @@ main {
 
 /* NAV */
 .nav {
-    padding: 7px;
-    background: var(--nav-bg);
+    width: 170px;
+    min-height: 860px;
+    box-sizing: border-box;
+    position: relative;
+    isolation: isolate;
     border-radius: 18px;
+}
+
+.nav::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../assets/images/stripe.png") repeat;
+    opacity: 0.3;
+    border-radius: inherit;
+    z-index: -1;
 }
 
 .nav-title {
@@ -174,8 +187,6 @@ main {
 .nav-links {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-small);
-    padding-top: 7px;
 }
 
 .nav-links a {
@@ -400,7 +411,7 @@ p a:hover {
     padding: 4px 8px;
     overflow: hidden;
     white-space: nowrap;
-    color: var(--lightpink);
+    color: var(--black);
     font-size: 13px;
     text-align: center;
     font-weight: bold;
@@ -418,6 +429,14 @@ p a:hover {
     margin: 0 4px;
 }
 
+#music-m {
+    background: var(--nav-link-pink-bg);
+    border-radius: 4px;
+    box-shadow: var(--box-shadow);
+    border: var(--frame-border);
+    -webkit-text-stroke: 0.2px var(--border);
+}
+
 
 /* VISITOR COUNTER */
 .visitor-counter {
@@ -425,32 +444,28 @@ p a:hover {
     font-size: 12px;
 }
 
-.counter-title {
-    margin: 0 0 10px;
-    color: var(--pink);
-    font-weight: bold;
-}
-
-.counter-number {
-    padding: 8px;
+.visitor-counter .icon {
     margin-bottom: 8px;
-    background: #171616;
-    border: 1px solid var(--pink-border);
 }
 
-.counter-number img {
+.visitor-counter .icon img {
     max-width: 100%;
     height: auto;
-    vertical-align: middle;
 }
 
-.counter-online {
-    color: var(--lightpink);
-    font-size: 11px;
+.view-count {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--pink);
+}
+
+.visitor-counter center img {
+    vertical-align: middle;
+    max-width: 100%;
 }
 
 .counter-thanks {
     margin: 10px 0 0;
-    color: var(--pink);
+    color: var(--lightpink);
     font-size: 11px;
 }

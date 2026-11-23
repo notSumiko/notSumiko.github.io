@@ -443,6 +443,7 @@ footer {
 .visitor-counter {
     text-align: center;
     font-size: 12px;
+    overflow: hidden;
 }
 
 .visitor-counter .icon {
@@ -465,8 +466,9 @@ footer {
     max-width: 100%;
 }
 
-.counter-thanks {
-    margin: 10px 0 0;
-    color: var(--lightpink);
-    font-size: 11px;
+.visitor-counter p img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }

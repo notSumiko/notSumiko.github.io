@@ -444,6 +444,8 @@ footer {
     text-align: center;
     font-size: 12px;
     overflow: hidden;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .visitor-counter .icon {
@@ -451,8 +453,10 @@ footer {
 }
 
 .visitor-counter .icon img {
+    display: block;
     max-width: 100%;
     height: auto;
+    margin: 0 auto;
 }
 
 .view-count {
@@ -461,14 +465,21 @@ footer {
     color: var(--pink);
 }
 
-.visitor-counter center img {
-    vertical-align: middle;
+/* FC2 COUNTER BOX */
+.counter-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
-.visitor-counter p img {
-    display: inline-block;
-    max-width: 100%;
+.counter-box img {
+    display: block;
+    max-width: 100% !important;
     height: auto;
+    margin: 0 auto;
     object-fit: contain;
 }

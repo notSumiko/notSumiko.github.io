@@ -380,63 +380,6 @@ footer {
 }
 
 
-/* RESPONSIVE */
-@media (max-width: 850px) {
-
-    #wrapper {
-        width: 96%;
-    }
-
-    #layout {
-        grid-template-columns: 150px minmax(0, 1fr) 150px;
-    }
-
-    .nav {
-        min-height: 860px;
-    }
-
-}
-
-@media (max-width: 680px) {
-
-    #layout {
-        grid-template-columns: 1fr;
-    }
-
-    .sidebar-left {
-        order: 1;
-    }
-
-    main {
-        order: 2;
-    }
-
-    .sidebar-right {
-        order: 3;
-    }
-
-    .nav {
-        min-height: auto;
-    }
-
-    .header {
-        min-height: 120px;
-    }
-
-    .double-box {
-        flex-wrap: wrap;
-    }
-
-    .double-box img {
-        max-width: 100%;
-    }
-
-    .amechan {
-        right: 10px;
-        width: 170px;
-    }
-
-}
 
 
 /* VISITOR COUNTER */
@@ -462,7 +405,7 @@ footer {
 .view-count {
     display: block;
     margin-bottom: 6px;
-    color: var(--pink);
+    color: var(--color-pink);
 }
 
 /* FC2 COUNTER BOX */
@@ -470,16 +413,19 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
+    flex-wrap: nowrap;
+    gap: 0;
     width: 100%;
+    max-width: 100%;
     overflow: hidden;
     box-sizing: border-box;
 }
 
 .counter-box img {
     display: block;
-    max-width: 100% !important;
+    width: auto;
+    max-width: 20% !important;
     height: auto;
-    margin: 0 auto;
+    flex-shrink: 1;
     object-fit: contain;
 }

@@ -1,7 +1,5 @@
-
 const monthYear = document.getElementById("month-year");
 const calendarDates = document.getElementById("calendar-dates");
-
 const prevMonth = document.getElementById("prev-month");
 const nextMonth = document.getElementById("next-month");
 
@@ -10,12 +8,9 @@ let currentDate = new Date();
 function renderCalendar() {
     const year = currentDate.getFullYear();
     const month = currentDate.getMonth();
-
     const firstDay = new Date(year, month, 1).getDay();
     const lastDate = new Date(year, month + 1, 0).getDate();
-
     const today = new Date();
-
     const monthNames = [
         "January", "February", "March",
         "April", "May", "June",
@@ -49,7 +44,6 @@ function renderCalendar() {
         ) {
             date.classList.add("today");
         }
-
         calendarDates.appendChild(date);
     }
 }
